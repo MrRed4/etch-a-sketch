@@ -10,6 +10,7 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 25px;
+    background: hsl(200, 100%, 90%);
 }
 
 button {
@@ -22,13 +23,13 @@ button {
     width: 480px;
     height: 480px;
     outline: 1px solid black;
+    background: white;
 }
 
 .container > div {
-    width: 30px;
-    height: 30px;
-    border: 1px solid black;
+    flex-basis: 30px;
     box-sizing: border-box;
+    border: 1px solid black;
 }
 
 .painted {

@@ -18,6 +18,7 @@ const clearBoard = () => {
     }
 }
 
+// Hover effect
 div.addEventListener('mouseover', (event) => {
     event.target.style.backgroundColor = 'gray';
     event.target.addEventListener('mouseout', (event) => {
@@ -27,6 +28,7 @@ div.addEventListener('mouseover', (event) => {
     })
 })
 
+// Painting
 div.addEventListener('mousedown', (event) => {
     event.preventDefault()
     event.target.classList.add('painted');

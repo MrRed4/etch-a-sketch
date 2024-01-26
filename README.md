@@ -1,2 +1,2 @@
-# etch-a-sketch
-Etch-a-Sketch game made following The Odin Project
+# Etch-a-Sketch
+Etch-a-Sketch game made following <a href="https://www.theodinproject.com/">The Odin Project</a>
