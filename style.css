@@ -5,6 +5,15 @@
 
 body {
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+button {
+    padding: 8px 18px;
 }
 
 .container {
@@ -12,7 +21,7 @@ body {
     flex-wrap: wrap;
     width: 480px;
     height: 480px;
-    background-color: transparent !important;
+    outline: 1px solid black;
 }
 
 .container > div {
