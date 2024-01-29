@@ -18,12 +18,29 @@ const clearBoard = () => {
     }
 }
 
+const resizeGrid = () => {
+    const axis = Number(prompt('Enter number of "pixels" per axis: '));
+    if (isNaN(axis) || axis <= 0 || axis > 100) {
+        alert('Please enter a valid number and try again (1-100)')
+        return
+    }
+
+    container.innerHTML = ''
+
+    for (let i = 0; i < axis * axis; i++) {
+        const div = document.createElement('div')
+        container.appendChild(div)
+    }
+
+    container.style = `display: grid; grid-template: repeat(${axis}, 1fr) / repeat(${axis}, 1fr)`
+}
+
 // Hover effect
 div.addEventListener('mouseover', (event) => {
-    event.target.style.backgroundColor = 'gray';
+    event.target.style = 'background-color: gray; border: none;';
     event.target.addEventListener('mouseout', (event) => {
-        if (event.srcElement.style.backgroundColor !== 'black') {
-            event.srcElement.removeAttribute('style')
+        if (event.target.style.backgroundColor !== 'black') {
+            event.target.removeAttribute('style')
         }
     })
 })
